@@ -1,0 +1,46 @@
+.logo {
+  font-family: $logo-font-family;
+  font-weight: 700;
+
+  color: $title-text-color;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: $letter-spacing;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.logo .logo-primary {
+  color: $accent-color;
+}
+
+.flex-container .logo {
+  @extend %link;
+  animation: logo-appear 350ms linear;
+}
+
+@keyframes logo-appear {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}

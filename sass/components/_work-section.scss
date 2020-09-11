@@ -1,0 +1,56 @@
+.features-section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+
+  text-align: center;
+
+  color: $title-text-color;
+}
+
+.work-list {
+  @extend %list;
+  display: flex;
+
+  .work-item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    z-index: -1;
+  }
+
+  .work-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work-item a {
+  @extend %link;
+  position: relative;
+}
+
+.work-list {
+  .work-subtitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    margin: 0;
+    padding: 27px 80px;
+
+    color: $primary-white-color;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+    background-color: $third-bg-color;
+  }
+}

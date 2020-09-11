@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #2f303a;
+}

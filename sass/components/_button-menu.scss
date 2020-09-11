@@ -1,0 +1,32 @@
+.main-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-button {
+  .icon-menu-close {
+    display: none;
+  }
+
+  &.is-open .icon-menu-close {
+    display: block;
+  }
+
+  &.is-open:hover .icon-menu-close {
+    color: $accent-color;
+  }
+
+  &.is-open .icon-menu-open {
+    display: none;
+  }
+}
+
+.icon-menu-close {
+  fill: currentColor;
+}

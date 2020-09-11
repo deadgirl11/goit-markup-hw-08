@@ -1,0 +1,52 @@
+.join-container {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .join {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.socials-list {
+  @extend %list;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+
+  .social-icon:hover,
+  .social-icon:focus {
+    background-color: $accent-color;
+  }
+}
+
+.socials-list > .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item > .social-icon {
+  @extend %centered-flex;
+  @extend %link;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: $social-icon-color;
+
+  transition: background-color $transition-duration $transition-timing-function;
+
+  .icon-join {
+    fill: $primary-white-color;
+    width: 20px;
+    height: 20px;
+  }
+}
